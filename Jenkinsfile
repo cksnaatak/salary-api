@@ -9,7 +9,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the GitHub repository
-                git 'https://github.com/cksnaatak/salary-api.git'
+               git branch: 'main', url: 'https://github.com/cksnaatak/salary-api.git'
+
             }
         }
         stage('Build') {
